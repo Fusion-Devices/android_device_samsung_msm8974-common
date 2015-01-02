@@ -39,8 +39,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     audio.offload.buffer.size.kb=32 \
     audio.offload.gapless.enabled=false \
-    av.offload.enable=true \
-    qcom.hw.aac.encoder=true
+    av.offload.enable=true
 
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
     camera2.portability.force_api=1
@@ -81,6 +80,11 @@ PRODUCT_PACKAGES += \
     libqcompostprocbundle \
     libqcomvoiceprocessing \
     tinymix
+
+# Camera
+PRODUCT_PACKAGES += \
+    camera.msm8974 \
+    libxml2
 
 # CRDA
 PRODUCT_PACKAGES += \
